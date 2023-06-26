@@ -31,6 +31,7 @@ import vans2b from '../assets/vans/vans2b.webp';
 
 import crocs1a from '../assets/crocs/crocs1a.webp';
 import crocs1b from '../assets/crocs/crocs1b.webp';
+
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -148,6 +149,9 @@ export default function NewsBanners() {
                 <p>{banner.name}</p>
                 {banner.brand}
                 <Price>R${banner.price}</Price>
+                <New>
+                  novo
+                </New>
               </Card>
             </div>;
           }) }
@@ -156,6 +160,19 @@ export default function NewsBanners() {
     </>
   );
 }
+
+const New = styled.div`
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(40px);
+  padding: 4px 7px;
+  border-radius: 20px;
+  font-weight: 300;
+  top: 35px;
+  right: 35px;
+  border: 1px solid lightgray;
+`; 
 
 const ImageAbove = styled.div`
   transition: all .1s ease-in-out;

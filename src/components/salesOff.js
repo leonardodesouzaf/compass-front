@@ -151,7 +151,10 @@ export default function SalesOff() {
                   <img src={banner.img}/>
                   <p>{banner.name}</p>
                   {banner.brand}
-                  <Price>R${banner.price}</Price>
+                  <Price>R${banner.price} <p>R${banner.price}</p></Price>
+                  <New>
+                    -50% OFF
+                  </New>
                 </Card>
               </div>;
             }) }
@@ -171,6 +174,19 @@ export default function SalesOff() {
     </>
   );
 }
+
+const New = styled.div`
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(40px);
+  padding: 4px 7px;
+  border-radius: 20px;
+  font-weight: 300;
+  top: 35px;
+  right: 35px;
+  border: 1px solid lightgray;
+`; 
 
 const Title = styled.div`
   position: absolute;
@@ -217,6 +233,13 @@ const Price = styled.div`
   position: absolute;
   bottom: 25px;
   left: 25px;
+  display: flex;
+  align-items: center;
+  p{
+    color: gray !important;
+    margin-left: 10px !important;
+    text-decoration: line-through;
+  }
 `;
 
 const Sale = styled.div`

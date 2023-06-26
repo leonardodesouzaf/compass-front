@@ -10,9 +10,7 @@ export default function Header() {
       <Content>
         <CompassLogo>COMPASS</CompassLogo>
         <MenuLogo isMenu={isMenu} onClick={() => {
-          if(!isMenu) {
-            setIsMenu(true);
-          }
+          setIsMenu(!isMenu);
         }}/>
         <MenuLogo2 isMenu={isMenu}/>
       </Content>
@@ -27,16 +25,13 @@ export default function Header() {
 
 export const Menu = styled.div`
   background-color: #D4305A;
-  background-color: rgba(212,48,90,.4);
-  backdrop-filter: blur(40px);
-  border: 5px solid black;
+  background-color: #eaeaea;
+  border: 4px solid black;
   border-right: none;
-  border-bottom-left-radius: 75px;
-  border-top-left-radius: 75px;
   position: fixed;
-  top: 10px;
+  top: 105px;
   right: 0;
-  height: calc(100vh - 20px);
+  height: calc(100vh - 105px);
   width: 25vw;
   z-index: 7;
   overflow: hidden;

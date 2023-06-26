@@ -32,9 +32,10 @@ const Bandeiras = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 25px;
-  height: 100px;
+  height: 120px;
   img{
-    width: 250px;
+    width: 200px;
+    margin-left: -7px;
     margin-top: 2px;
   }
 `;
@@ -42,7 +43,7 @@ const Bandeiras = styled.div`
 const Contato = styled.div`
   color: black;
   font-size: 25px;
-  height: 100px;
+  height: 120px;
   margin-right: 40px;
   max-width: 320px;
   p{
@@ -80,4 +81,5 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   background-color: #F1F1F1;
+  filter: brightness(0.8);
 `;

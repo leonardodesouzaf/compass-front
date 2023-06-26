@@ -37,11 +37,9 @@ const Crocs = styled.div`
   img{
     width: 150px;
     transition: filter .2s linear;
-    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
-      scale: 1.05;
     }
   }
 `;
@@ -50,11 +48,9 @@ const Nike = styled.div`
   img{
     width: 150px;
     transition: filter .2s linear;
-    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
-      scale: 1.05;
     }
   }
 `;
@@ -63,11 +59,9 @@ const Adidas = styled.div`
   img{
     width: 110px;
     transition: filter .2s linear;
-    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
-      scale: 1.05;
     }
   }
 `;
@@ -76,11 +70,9 @@ const Vans = styled.div`
   img{
     width: 150px;
     transition: filter .2s linear;
-    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
-      scale: 1.05;
     }
   }
 `;
@@ -89,11 +81,9 @@ const Converse = styled.div`
   img{
     width: 140px;
     transition: filter .2s linear;
-    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
-      scale: 1.05;
     }
   }
 `;
