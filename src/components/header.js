@@ -16,25 +16,53 @@ export default function Header() {
       </Content>
       <Slide in={isMenu} direction="left" timeout={1000} unmountOnExit mountOnEnter>
         <Menu>
-
+          <p>Home</p>
+          <Division></Division>
+          <p>Conta</p>
+          <Division></Division>
+          <p>Carrinho</p>
+          <Division></Division>
+          <p>Favoritos</p>
+          <Division></Division>
+          <p>Sobre nós</p>
+          <Division></Division>
+          <p>Ajuda</p>
+          <Division></Division>
         </Menu>
       </Slide>
     </>
   );
 }
 
+export const Division = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 4px;
+  background-color: black;
+`;
+
 export const Menu = styled.div`
-  background-color: #D4305A;
   background-color: #eaeaea;
-  border: 4px solid black;
-  border-right: none;
+  border-left: 4px solid black;
   position: fixed;
-  top: 105px;
+  top: 109px;
   right: 0;
-  height: calc(100vh - 105px);
+  height: calc(100vh - 109px);
   width: 25vw;
   z-index: 7;
   overflow: hidden;
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  p{
+    margin: 30px 0;
+    margin-left: 10%;
+    :hover{
+      cursor: pointer;
+    }
+  }
 `;
 
 export const MenuLogo2 = styled(MenuRoundedIcon)`
@@ -45,7 +73,7 @@ export const MenuLogo2 = styled(MenuRoundedIcon)`
   font-size: 40px !important;
   color: black;
   transform: ${(props) => (props.isMenu ? 'rotate(90deg)' : 'none')};
-  transition: all 1s linear !important;
+  transition: all .9s linear !important;
 `;
 
 export const MenuLogo = styled(MenuRoundedIcon)`
@@ -55,7 +83,7 @@ export const MenuLogo = styled(MenuRoundedIcon)`
   right: 50px;
   font-size: 40px !important;
   transform: ${(props) => (props.isMenu ? 'rotate(90deg)' : 'none')};
-  transition: all 1s linear !important;
+  transition: all .9s linear !important;
   :hover{
     cursor: pointer;
   }

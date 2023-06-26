@@ -32,7 +32,7 @@ const Bandeiras = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 25px;
-  height: 120px;
+  height: 90px;
   img{
     width: 200px;
     margin-left: -7px;
@@ -43,7 +43,7 @@ const Bandeiras = styled.div`
 const Contato = styled.div`
   color: black;
   font-size: 25px;
-  height: 120px;
+  height: 90px;
   margin-right: 40px;
   max-width: 320px;
   p{
@@ -69,7 +69,8 @@ const CompassLogo = styled.div`
 
 const Division = styled.div`
   height: 100%;
-  width: 2px;
+  border-radius: 10px;
+  width: 6px;
   background-color: black;
   margin: 0 50px;
 `;

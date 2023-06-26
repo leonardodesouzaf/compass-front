@@ -90,8 +90,9 @@ const Converse = styled.div`
 
 const Division = styled.div`
   height: 70%;
-  width: 2px;
+  width: 6px;
   background-color: black;
+  border-radius: 10px;
 `;
 
 export const Content = styled.div`
