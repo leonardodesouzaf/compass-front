@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import Header from '../components/header';
 import Banners from '../components/carousel';
 import Brands from '../components/brands';
+import News from '../components/news';
+import History from '../components/history';
+import SalesOff from '../components/salesOff';
+import Footer from '../components/footer';
 
 export default function Homepage() {
   window.onbeforeunload = function() {
@@ -14,18 +18,24 @@ export default function Homepage() {
         <Header/>
         <Banners/>
         <Brands/>
+        <News/>
+        <History/>
+        <SalesOff/>
+        <Footer/>
       </Page>
     </>
   );
 }
 
 export const Page = styled.div`
-  background-color: #D4305A;
   background-color: #2F96BB;
   color: white;
   min-height: 100vh;
   height: 100%;
   width: 100%;
+  max-width: 2500px;
+  overflow: hidden;
+  margin: 0 auto;
   position: relative;
   box-sizing: border-box;
   display: flex;

@@ -29,36 +29,19 @@ export default function Brands() {
           <img src={crocs}/>
         </Crocs>
       </Content>
-      <Text>
-        <p>
-          As marcas favoritas estão aqui na COMPASS
-        </p>
-      </Text>
     </>
   );
 }
 
-const Text = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  p{
-    width: 50%;
-    color: black;
-    font-size: 25px;
-    
-  }
-`;
-
 const Crocs = styled.div`
   img{
     width: 150px;
-    transition: all .2s linear;
+    transition: filter .2s linear;
+    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
+      scale: 1.05;
     }
   }
 `;
@@ -66,10 +49,12 @@ const Crocs = styled.div`
 const Nike = styled.div`
   img{
     width: 150px;
-    transition: all .2s linear;
+    transition: filter .2s linear;
+    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
+      scale: 1.05;
     }
   }
 `;
@@ -77,10 +62,12 @@ const Nike = styled.div`
 const Adidas = styled.div`
   img{
     width: 110px;
-    transition: all .2s linear;
+    transition: filter .2s linear;
+    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
+      scale: 1.05;
     }
   }
 `;
@@ -88,10 +75,12 @@ const Adidas = styled.div`
 const Vans = styled.div`
   img{
     width: 150px;
-    transition: all .2s linear;
+    transition: filter .2s linear;
+    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
+      scale: 1.05;
     }
   }
 `;
@@ -99,23 +88,27 @@ const Vans = styled.div`
 const Converse = styled.div`
   img{
     width: 140px;
-    transition: all .2s linear;
+    transition: filter .2s linear;
+    transition: scale .3s linear;
     :hover{
       cursor: pointer;
       filter: invert(1);
+      scale: 1.05;
     }
   }
 `;
 
 const Division = styled.div`
   height: 70%;
-  width: 1px;
+  width: 2px;
   background-color: black;
 `;
 
 export const Content = styled.div`
   width: 100%;
   height: 200px;
+  padding: 0 3vw;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
