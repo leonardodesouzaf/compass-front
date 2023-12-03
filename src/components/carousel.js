@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
 import banner1 from '../assets/images/banner1.jpeg';
+import banner2 from '../assets/images/banner2.png';
+import banner3 from '../assets/images/banner3.png';
 import NavigateNextRoundedIcon from '@mui/icons-material/NavigateNextRounded';
 import NavigateBeforeRoundedIcon from '@mui/icons-material/NavigateBeforeRounded';
 
@@ -24,12 +26,17 @@ export default function Banners() {
         <Slider {...settings}>
           <div>
             <ImagesFlex>
-              <img src={banner1} alt='Foto do ponto turístico'/>
+              <img src={banner2} alt='Banner'/>
             </ImagesFlex>
           </div>
           <div>
             <ImagesFlex>
-              <img src={banner1} alt='Foto do ponto turístico'/>
+              <img src={banner1} alt='Banner'/>
+            </ImagesFlex>
+          </div>
+          <div>
+            <ImagesFlex>
+              <img src={banner3} alt='Banner'/>
             </ImagesFlex>
           </div>
         </Slider>

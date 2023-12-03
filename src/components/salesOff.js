@@ -136,6 +136,9 @@ export default function SalesOff() {
     infinite: true,
     slidesToShow: (screenWidth > 1300) ? ((screenWidth > 1900) ? 3 : 2) : 1,
     slidesToScroll: (screenWidth > 1300) ? ((screenWidth > 1900) ? 3 : 2) : 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
   };
   return (
     <>
@@ -243,7 +246,7 @@ const Price = styled.div`
 `;
 
 const Sale = styled.div`
-  background-color: #a9bc9e;
+  background-color: gray;
   width: 80%;
   height: 600px;
   padding: 50px;

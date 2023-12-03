@@ -15,10 +15,10 @@ export default function Homepage() {
   return (
     <>
       <Page>
-        <Header/>
+        <Header path={'/'}/>
         <Banners/>
-        <Brands/>
         <News/>
+        <Brands/>
         <History/>
         <SalesOff/>
         <Footer/>
@@ -28,7 +28,7 @@ export default function Homepage() {
 }
 
 export const Page = styled.div`
-  background-color: #2F96BB;
+  background-color: black;
   color: white;
   min-height: 100vh;
   height: 100%;

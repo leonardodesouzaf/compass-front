@@ -37,9 +37,10 @@ const Crocs = styled.div`
   img{
     width: 150px;
     transition: filter .2s linear;
+    filter: invert(1);
     :hover{
       cursor: pointer;
-      filter: invert(1);
+      filter: invert(.5);
     }
   }
 `;
@@ -48,9 +49,10 @@ const Nike = styled.div`
   img{
     width: 150px;
     transition: filter .2s linear;
+    filter: invert(1);
     :hover{
       cursor: pointer;
-      filter: invert(1);
+      filter: invert(.5);
     }
   }
 `;
@@ -59,9 +61,10 @@ const Adidas = styled.div`
   img{
     width: 110px;
     transition: filter .2s linear;
+    filter: invert(1);
     :hover{
       cursor: pointer;
-      filter: invert(1);
+      filter: invert(.5);
     }
   }
 `;
@@ -70,9 +73,10 @@ const Vans = styled.div`
   img{
     width: 150px;
     transition: filter .2s linear;
+    filter: invert(1);
     :hover{
       cursor: pointer;
-      filter: invert(1);
+      filter: invert(.5);
     }
   }
 `;
@@ -81,17 +85,18 @@ const Converse = styled.div`
   img{
     width: 140px;
     transition: filter .2s linear;
+    filter: invert(1);
     :hover{
       cursor: pointer;
-      filter: invert(1);
+      filter: invert(.5);
     }
   }
 `;
 
 const Division = styled.div`
   height: 70%;
-  width: 6px;
-  background-color: black;
+  width: 1px;
+  background-color: white;
   border-radius: 10px;
 `;
 
@@ -99,7 +104,6 @@ export const Content = styled.div`
   width: 100%;
   height: 200px;
   padding: 0 3vw;
-  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

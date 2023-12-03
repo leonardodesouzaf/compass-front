@@ -134,6 +134,9 @@ export default function NewsBanners() {
     infinite: true,
     slidesToShow: (screenWidth > 1700) ? ((screenWidth > 2100) ? 6 : 5) : 4,
     slidesToScroll: (screenWidth > 1700) ? ((screenWidth > 2100) ? 6 : 5) : 4,
+    autoplay: true,
+    autoplaySpeed: 14000,
+    pauseOnHover: true,
   };
   return (
     <>

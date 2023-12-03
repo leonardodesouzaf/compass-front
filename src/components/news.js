@@ -15,10 +15,25 @@ export default function News() {
           </div>
         </Title>
         <NewsBanners/>
+        <SeeAll>Ver tudo...</SeeAll>
       </Content>
     </>
   );
 }
+
+export const SeeAll = styled.div`
+  width: 100%;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: 100;
+  color: lightgray;
+  text-align: end;
+  :hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+  }
+`;
 
 export const Previous = styled(NavigateBeforeRoundedIcon)`
   font-size: 60px !important;
@@ -52,5 +67,5 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  padding: 30px 60px;
+  padding: 60px;
 `;
