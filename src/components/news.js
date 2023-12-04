@@ -2,8 +2,14 @@ import styled from 'styled-components';
 import NavigateNextRoundedIcon from '@mui/icons-material/NavigateNextRounded';
 import NavigateBeforeRoundedIcon from '@mui/icons-material/NavigateBeforeRounded';
 import NewsBanners from './newsCarousel';
+import { useNavigate } from 'react-router-dom';
 
 export default function News() {
+  const navigate = useNavigate();
+  function navigateTo(route) {
+    navigate(route);
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <Content>
@@ -15,7 +21,7 @@ export default function News() {
           </div>
         </Title>
         <NewsBanners/>
-        <SeeAll>Ver tudo...</SeeAll>
+        <SeeAll onClick={() => navigateTo('/gallery/news')}>Ver tudo...</SeeAll>
       </Content>
     </>
   );

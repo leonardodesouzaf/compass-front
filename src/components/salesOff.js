@@ -36,9 +36,11 @@ import crocs1a from '../assets/crocs/crocs1a.webp';
 import crocs1b from '../assets/crocs/crocs1b.webp';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function SalesOff() {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
+  const navigate = useNavigate();
   useEffect(() => {
     function handleResize() {
       setScreenWidth(window.screen.width);
@@ -140,6 +142,10 @@ export default function SalesOff() {
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
+  function navigateTo(route) {
+    navigate(route);
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <Content>
@@ -171,12 +177,27 @@ export default function SalesOff() {
             até
             <p>60%</p>
             <p>OFF</p>
+            <SeeAll onClick={() => navigateTo('/gallery/sale')}>Ver tudo...</SeeAll>
           </Title>
         </Sale>
       </Content>
     </>
   );
 }
+
+export const SeeAll = styled.div`
+  width: 100%;
+  padding-right: 8px;
+  font-size: 20px;
+  font-weight: 100;
+  color: lightgray;
+  text-align: end;
+  :hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+  }
+`;
 
 const New = styled.div`
   position: absolute;

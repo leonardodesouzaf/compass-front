@@ -13,6 +13,7 @@ export default function Header({ path }) {
     setIsMenu(false);
     setTimeout(() => {
       if (route !== path) navigate(route);
+      window.scrollTo(0, 0);
     }, isMenu ? 500 : 0);
   }
   return (
@@ -42,9 +43,9 @@ export default function Header({ path }) {
             <Division></Division>
             <p onClick={() => navigateTo('/')}>Home</p>
             <Division></Division>
-            <p>Novidades</p>
+            <p onClick={() => navigateTo('/gallery/news')}>Novidades</p>
             <Division></Division>
-            <p>SALE 60% OFF</p>
+            <p onClick={() => navigateTo('/gallery/sale')}>SALE 60% OFF</p>
             <Division></Division>
             <p onClick={() => navigateTo('/about')}>Sobre nós</p>
             <Division></Division>
